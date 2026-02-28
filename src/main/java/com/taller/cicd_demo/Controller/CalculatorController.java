@@ -11,7 +11,7 @@ public class CalculatorController {
 
     @GetMapping("/sum")
     public int sum( @RequestParam int a,@RequestParam int b){
-        return a * b; //  BUG:  deberia ser a + b
+        return a + b; //  BUG:  deberia ser a + b
     }
 
     @GetMapping("/multiply")
